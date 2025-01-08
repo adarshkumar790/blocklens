@@ -1,11 +1,14 @@
 import Advertise from '@/components/Advertise';
+import Articles from '@/components/Article';
 import Authors from '@/components/Auther';
 import Banner from '@/components/Banner';
 import Container from '@/components/Container';
+import Container1 from '@/components/Container1';
 import Founders from '@/components/Founder';
 import Guides from '@/components/Guides';
 import Navbar from '@/components/Navbar';
 import Navbarbelow from '@/components/Navbarbelow';
+import Shops from '@/components/Shop';
 import Image from 'next/image';
 import React from 'react';
 import { BsInstagram, BsLinkedin, BsTwitter, BsYoutube } from 'react-icons/bs';
@@ -56,6 +59,9 @@ const Header = () => {
      <Authors/>
      <Founders/>
      <Advertise/>
+     <Articles/>
+     <Shops/>
+      <Container1/>
     </header>
   );
 };
