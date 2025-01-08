@@ -61,15 +61,15 @@ const Container1: React.FC = () => {
               <p className="w-[300px] h-[150px]  left-[124px] gap-0">{article.description}</p>
               <div className="flex items-center justify-between text-sm text-[#53575D] mt-4">
               <div style={{ display: 'flex', alignItems: 'center' }}>
-  <Image src="/profile.png" width={15} height={15} alt="calendar" />
-  <span style={{ marginLeft: '5px' }}>Halanko</span>
-</div>
+              <Image src="/profile.png" width={15} height={15} alt="calendar" />
+              <span style={{ marginLeft: '5px' }}>Halanko</span>
+              </div>
 
                 
                 <div style={{ display: 'flex', alignItems: 'center' }}>
-  <Image src="/cal.png" width={15} height={15} alt="calendar" />
-  <span style={{ marginLeft: '5px' }}>Jan 1, 2025</span>
-</div>
+               <Image src="/cal.png" width={15} height={15} alt="calendar" />
+               <span style={{ marginLeft: '5px' }}>Jan 1, 2025</span>
+               </div>
 
                 <button className="text-[#FFFFFF] text-xs font-medium px-2 py-2 bg-[#1E293B] rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400">
               {article.tag}
