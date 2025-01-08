@@ -46,7 +46,7 @@ const articles = [
 
 export default function ArticleContainer() {
   return (
-    <div className="bg-white p-6 flex justify-center">
+    <div className="bg-white p-6 flex flex-col items-center">
       <div className="grid gap-6 lg:grid-cols-1 w-full max-w-5xl">
         {articles.map((article, index) => (
           <div
@@ -66,14 +66,15 @@ export default function ArticleContainer() {
             {/* Right Side: Text */}
             <div className="p-4 flex flex-col justify-between">
               <div>
-              <div className="relative flex justify-center items-center w-[60px] h-[30px] bg-[#00000040] rounded-sm">
-      <span className="text-[#FFFFFF] font-bold w-[58px] pl-2 bg-[#8CC63F]">Takes</span>
-      </div>
-
+                <div className="relative flex justify-center items-center w-[60px] h-[30px] bg-[#00000040] rounded-sm">
+                  <span className="text-[#FFFFFF] font-bold w-[58px] pl-2 bg-[#8CC63F]">Takes</span>
+                </div>
                 <h2 className="font-sans text-xl text-[#000000] font-semibold leading-[38.73px] text-left decoration-[none]">
                   {article.title}
                 </h2>
-                <p className="font-serif text-xl text-[#53575D] font-normal leading-[23.01px] tracking-wide text-left  decoration-[none]">{article.description}</p>
+                <p className="font-serif text-xl text-[#53575D] font-normal leading-[23.01px] tracking-wide text-left decoration-[none]">
+                  {article.description}
+                </p>
               </div>
               <div className="mt-4 flex justify-between text-[#53575D] text-xs">
                 <span>BY {article.author}</span>
@@ -83,6 +84,13 @@ export default function ArticleContainer() {
           </div>
         ))}
       </div>
+
+      {/* Centered Button */}
+      <button className="mt-6 px-6 py-2 bg-[#8F9295] text-white font-semibold text-sm flex items-center gap-2 hover:bg-[#72a52c] transition-colors">
+  See More 
+  <Image src="/see.png" alt="see" width={16} height={16} />
+</button>
+
     </div>
   );
 }

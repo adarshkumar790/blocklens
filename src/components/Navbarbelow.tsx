@@ -34,7 +34,7 @@ const Navbarbelow: React.FC = () => {
                 href={href}
                 className={`font-inter text-[18px] font-semibold leading-[24.2px] underline-offset-auto decoration-skip-ink-none ${
                   pathname === href || activeLink === href
-                    ? "text-[#8CC63F] text-[#FFFFFF] bg-white pb-4 -mb-6 pt-1 pl-1 pr-1"
+                    ? "text-[#8CC63F] text-[#8CC63F] bg-white pb-4 -mb-6 pt-1 pl-1 pr-1"
                     : "text-[#FFFFFF] hover:text-yellow-500"
                 }`}
                 onClick={() => handleLinkClick(href)}
