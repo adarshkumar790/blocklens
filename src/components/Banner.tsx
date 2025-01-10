@@ -3,7 +3,7 @@ import React from "react";
 
 const Banner: React.FC = () => {
   return (
-    <div className="flex justify-center items-center bg-white min-h-screen">
+    <div className="flex justify-center items-center bg-white min-h-screen p-2 md:p-0">
       {/* Main Container */}
       <div className="flex gap-6 w-full mt-4">
 
@@ -34,14 +34,14 @@ const Banner: React.FC = () => {
             {/* Shadow Effect */}
             <div className="absolute md:-bottom-1 -bottom-8 -right-1 w-full h-[40px] bg-black rounded-sm -ml-20"></div>
             {/* Main Button */}
-            <div className="relative flex justify-center -bottom-7 items-center w-[120px] h-[40px] bg-orange-500 rounded-sm">
+            <div className="relative flex justify-center md:-bottom-0 -bottom-7 items-center w-[120px] h-[40px] bg-orange-500 rounded-sm">
               <span className="text-white font-bold">NEWS</span>
             </div>
           </div>
         </div>
 
         {/* Right Box (Hidden on Mobile) */}
-        <div className="hidden md:block bg-white shadow-md mt-12 rounded-xl overflow-hidden h-[420px] w-1/10 z-10">
+        <div className="hidden md:block bg-white shadow-md md:mt-12 mt-16  rounded-xl overflow-hidden h-[420px] w-1/10 z-10">
           <img
             src="/banner2.png" // Replace with actual image
             alt="Middle Right Banner"
@@ -57,12 +57,12 @@ const Banner: React.FC = () => {
       </div>
 
       {/* Mobile View (Responsive Design) */}
-      <div className="block md:hidden w-full mt-6">
-        <div className="bg-white shadow-md rounded-xl overflow-hidden w-full h-[200px]">
+      <div className="block md:hidden w-full mt-20 ml-1">
+        <div className="bg-white shadow-md rounded-xl overflow-hidden w-full h-[300px]">
           <img
-            src="/banner1.png" // Replace with actual image
+            src="/banner2.png" // Replace with actual image
             alt="Bitcoin Analysis"
-            className="w-full h-[200px] object-cover"
+            className="w-full h-[300px] object-cover"
           />
         </div>
         {/* Rectangle Box Below Mobile Image */}
