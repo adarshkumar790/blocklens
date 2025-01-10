@@ -43,7 +43,7 @@ const articles = [
 
 const Container1: React.FC = () => {
   return (
-    <div className="bg-white min-h-screen py-10">
+    <div className="bg-white min-h-screen py-10 p-2">
         <h2 className="text-2xl font-bold text-center mb-24">Latest Articles</h2>
       <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {articles.map((article, index) => (

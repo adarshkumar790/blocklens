@@ -41,8 +41,8 @@ const articles = [
 
 const Container: React.FC = () => {
   return (
-    <div className="bg-white min-h-screen p-4 py-10">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
+    <div className="bg-white min-h-screen p-4  py-10">
+      <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
         {articles.map((article, index) => (
           <div
             key={index}
