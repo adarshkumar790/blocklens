@@ -32,7 +32,7 @@ const Navbarbelow: React.FC = () => {
               <Link
                 key={href}
                 href={href}
-                className={`font-inter md:text-[18px] text-[13px] font-semibold leading-[24.2px] underline-offset-auto decoration-skip-ink-none ${
+                className={`font-inter md:text-[18px] text-[13px] font-bold md:font-semibold leading-[24.2px] underline-offset-auto decoration-skip-ink-none ${
                   pathname === href || activeLink === href
                     ? "text-[#8CC63F] text-[#8CC63F] bg-white pb-4 -mb-6 pt-1 pl-1 pr-1"
                     : "text-[#FFFFFF] hover:text-yellow-500"
