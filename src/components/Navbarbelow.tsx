@@ -32,7 +32,7 @@ const Navbarbelow: React.FC = () => {
               <Link
                 key={href}
                 href={href}
-                className={`font-inter text-[18px] font-semibold leading-[24.2px] underline-offset-auto decoration-skip-ink-none ${
+                className={`font-inter md:text-[18px] text-[12px] font-semibold leading-[24.2px] underline-offset-auto decoration-skip-ink-none ${
                   pathname === href || activeLink === href
                     ? "text-[#8CC63F] text-[#8CC63F] bg-white pb-4 -mb-6 pt-1 pl-1 pr-1"
                     : "text-[#FFFFFF] hover:text-yellow-500"
@@ -48,7 +48,7 @@ const Navbarbelow: React.FC = () => {
         {/* Search Icon */}
         <div className="ml-auto">
           <button
-            className="text-[#FFFFFF] hover:text-yellow-500 focus:outline-none mr-10"
+            className="text-[#FFFFFF] hover:text-yellow-500 focus:outline-none md:mr-10 mr-1"
             aria-label="Search"
           >
             <FaSearch size={18} />
