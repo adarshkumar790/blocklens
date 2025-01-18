@@ -41,7 +41,7 @@ const HomePage: React.FC = () => {
           </div>
 
           {/* Buttons */}
-          <div className="mt-12 flex space-x-4 justify-end pr-14 pt-8">
+          <div className="mt-12 flex space-x-4 justify-end pr-14 pt-2">
             <button className="bg-[#F8BD48] text-xs text-[#FFFFFF] px-4 py-2 font-semibold z-10 border border-white">
               LIBRARY EDITION
             </button>
