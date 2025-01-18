@@ -1,5 +1,4 @@
-"use client"
-// pages/index.tsx
+"use client";
 import { useState } from 'react';
 import Image from 'next/image';
 
@@ -36,14 +35,12 @@ const allArticles = [
     author: 'HELMUNG',
     imageSrc: '/article2.png',
   },
-  // Add more articles here...
 ];
 
 export default function ArticleContainer() {
-  const [visibleArticles, setVisibleArticles] = useState(3); // Initially display 2 articles
+  const [visibleArticles, setVisibleArticles] = useState(3); // Initially display 3 articles
 
   const handleSeeMore = () => {
-    // Increase the number of visible articles
     setVisibleArticles((prev) => Math.min(prev + 3, allArticles.length));
   };
 
@@ -51,11 +48,11 @@ export default function ArticleContainer() {
     <div className="bg-white p-4 sm:p-6 flex flex-col items-center">
       <div className="grid gap-6 w-full max-w-5xl sm:grid-cols-2 lg:grid-cols-1">
         {allArticles.slice(0, visibleArticles).map((article, index) => (
-          <div
+          <article
             key={index}
-            className="bg-white rounded-lg p-2 shadow-md overflow-hidden hover:shadow-lg transition-shadow flex flex-col sm:flex-row"
+            className="bg-white rounded-lg p-2 shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-200 flex flex-col sm:flex-row"
+            aria-labelledby={`article-title-${index}`}
           >
-            {/* Left Side: Image */}
             <div className="relative h-48 w-full sm:w-48 flex-shrink-0">
               <Image
                 src={article.imageSrc}
@@ -63,9 +60,9 @@ export default function ArticleContainer() {
                 layout="fill"
                 objectFit="cover"
                 className="rounded-lg"
+                loading="lazy"
               />
             </div>
-            {/* Right Side: Text */}
             <div className="p-4 flex flex-col justify-between">
               <div>
                 <div className="relative flex justify-center items-center w-[60px] h-[30px] bg-[#00000040] rounded-sm">
@@ -73,7 +70,10 @@ export default function ArticleContainer() {
                     Takes
                   </span>
                 </div>
-                <h2 className="font-sans text-lg sm:text-xl text-[#000000] font-semibold leading-snug text-left">
+                <h2
+                  id={`article-title-${index}`}
+                  className="font-sans text-lg sm:text-xl text-[#000000] font-semibold leading-snug text-left"
+                >
                   {article.title}
                 </h2>
                 <p className="font-serif text-sm sm:text-base text-[#53575D] font-normal leading-relaxed text-left">
@@ -82,14 +82,13 @@ export default function ArticleContainer() {
               </div>
               <div className="mt-4 flex justify-between text-[#53575D] text-xs sm:text-sm">
                 <span>BY {article.author}</span>
-                <span>{article.date}</span>
+                <time dateTime="2025-01-01">{article.date}</time>
               </div>
             </div>
-          </div>
+          </article>
         ))}
       </div>
 
-      {/* Centered Button */}
       <button
         onClick={handleSeeMore}
         disabled={visibleArticles >= allArticles.length}
@@ -98,9 +97,10 @@ export default function ArticleContainer() {
             ? 'bg-gray-400 cursor-not-allowed'
             : 'bg-[#8F9295] hover:bg-[#72a52c]'
         } text-white font-semibold text-sm flex items-center gap-2 transition-colors`}
+        aria-label="Load more articles"
       >
         See More
-        <Image src="/see.png" alt="see" width={16} height={16} />
+        <Image src="/see.png" alt="see more" width={16} height={16} />
       </button>
     </div>
   );

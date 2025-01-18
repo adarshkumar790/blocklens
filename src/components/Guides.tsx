@@ -4,7 +4,7 @@ import React, { useState } from "react";
 
 const guides = [
   {
-    title: "How to Use & Store bitcoin Safely",
+    title: "How to Use & Store Bitcoin Safely",
     image: "/guide1.png",
   },
   {
@@ -12,15 +12,15 @@ const guides = [
     image: "/guide2.png",
   },
   {
-    title: "Bitcoin history: 2009-2024",
+    title: "Bitcoin History: 2009-2024",
     image: "/guide3.png",
   },
   {
-    title: "Bitcoin history: 2009-2024",
+    title: "Bitcoin History: 2009-2024",
     image: "/guide4.png",
   },
   {
-    title: "Bitcoin history: 2009-2024",
+    title: "Bitcoin History: 2009-2024",
     image: "/guide4.png",
   },
 ];
@@ -31,13 +31,13 @@ const Guides: React.FC = () => {
 
   const handlePrev = () => {
     if (startIndex > 0) {
-      setStartIndex(startIndex - itemsPerPage);
+      setStartIndex((prevIndex) => prevIndex - itemsPerPage); // Optimized by using functional state updates
     }
   };
 
   const handleNext = () => {
     if (startIndex + itemsPerPage < guides.length) {
-      setStartIndex(startIndex + itemsPerPage);
+      setStartIndex((prevIndex) => prevIndex + itemsPerPage); // Optimized by using functional state updates
     }
   };
 
@@ -51,11 +51,16 @@ const Guides: React.FC = () => {
         {/* Guides Section */}
         <div className="flex flex-wrap gap-6 justify-center">
           {visibleGuides.map((guide, index) => (
-            <div key={index} className="bg-white w-[220px] overflow-hidden hover:shadow-lg">
-              <img
+            <div
+              key={index} // Index is fine here since the list is static
+              className="bg-white w-[220px] overflow-hidden hover:shadow-lg"
+            >
+              <Image
                 src={guide.image}
                 alt={guide.title}
-                className="w-[220px] h-[240px] object-cover"
+                width={220}
+                height={240}
+                className="object-cover" // Optimized by switching to Next.js Image component
               />
               <div className="pt-4 px-2">
                 <h3 className="text-sm font-medium text-[#53575D]">{guide.title}</h3>
@@ -64,9 +69,8 @@ const Guides: React.FC = () => {
           ))}
         </div>
 
-        {/* Buttons Section: Add flexbox and ensure spacing */}
+        {/* Buttons Section */}
         <div className="flex justify-between mt-6">
-          {/* Left Button */}
           <button
             onClick={handlePrev}
             disabled={startIndex === 0}
@@ -74,8 +78,7 @@ const Guides: React.FC = () => {
           >
             <Image src="/leftblock.png" width={20} height={20} alt="left" />
           </button>
-          
-          {/* Right Button */}
+
           <button
             onClick={handleNext}
             disabled={startIndex + itemsPerPage >= guides.length}

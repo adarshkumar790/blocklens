@@ -2,16 +2,16 @@ import React from "react";
 
 const AnyQuestion = () => {
   return (
-    <div className="h-60 bg-white"> {/* Adjusted height */}
+    <div className="h-60 bg-white"> 
       <div className="bg-[#53575D] text-center py-4">
-        {/* Title */}
+        
         <h2 className="text-2xl font-bold text-white">Any Question?</h2>
-        {/* Subtitle */}
+        
         <p className="text-sm font-bold text-[#FFFFFF] mt-4 mb-12">
           Do you have any questions or thoughts about this?
         </p>
 
-        {/* Input and Button */}
+        
         <div className="flex justify-center items-center -mb-10 relative">
           <input
             type="text"

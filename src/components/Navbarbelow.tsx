@@ -5,8 +5,8 @@ import { usePathname } from "next/navigation";
 import { FaSearch } from "react-icons/fa";
 
 const Navbarbelow: React.FC = () => {
-  const [isOpen, setIsOpen] = useState<boolean>(false);
-  const [activeLink, setActiveLink] = useState<string>("/");
+  const [isOpen, setIsOpen] = useState(false);
+  const [activeLink, setActiveLink] = useState("/");
   const pathname = usePathname();
 
   const handleLinkClick = (href: string) => {
@@ -34,7 +34,7 @@ const Navbarbelow: React.FC = () => {
                 href={href}
                 className={`font-inter md:text-[18px] text-[13px] font-bold md:font-semibold leading-[24.2px] underline-offset-auto decoration-skip-ink-none ${
                   pathname === href || activeLink === href
-                    ? "text-[#8CC63F] text-[#8CC63F] bg-white pb-4 -mb-6 pt-1 pl-1 pr-1"
+                    ? "text-[#8CC63F] bg-white pb-4 -mb-6 pt-1 pl-1 pr-1"
                     : "text-[#FFFFFF] hover:text-yellow-500"
                 }`}
                 onClick={() => handleLinkClick(href)}
@@ -51,7 +51,7 @@ const Navbarbelow: React.FC = () => {
             className="text-[#FFFFFF] hover:text-yellow-500 focus:outline-none md:mr-10 mr-1"
             aria-label="Search"
           >
-            <FaSearch className="md:w-{18} md:h-{18} w-{12} h-{12}" />
+            <FaSearch className="md:w-4 md:h-4 w-3 h-3" />
           </button>
         </div>
       </div>

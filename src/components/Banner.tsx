@@ -41,7 +41,7 @@ const Banner: React.FC = () => {
         </div>
 
         {/* Right Box (Hidden on Mobile) */}
-        <div className="hidden md:block bg-white shadow-md md:mt-12 mt-16  rounded-xl overflow-hidden h-[420px] w-1/10 z-10">
+        <div className="hidden md:block bg-white shadow-md md:mt-12 mt-16 rounded-xl overflow-hidden h-[420px] w-1/10 z-10">
           <img
             src="/banner2.png" // Replace with actual image
             alt="Middle Right Banner"
@@ -65,22 +65,10 @@ const Banner: React.FC = () => {
             className="w-full h-[300px] object-cover"
           />
         </div>
-        {/* Rectangle Box Below Mobile Image */}
-        <div className="hidden bg-[#D9D9D991] shadow-md overflow-hidden h-[30px] w-full mt-3"></div>
-        <div className=" hidden w-full h-[20px] mt-4 text-xl text-[#000000] font-bold text-center">
-          WATCH: Michael Saylor’s Bitcoin $100K Party
-        </div>
-        <div className="hidden relative inline-block mt-2">
-          {/* Shadow Effect */}
-          <div className="hidden absolute -bottom-1 -right-1 w-full h-[30px] bg-black rounded-sm"></div>
-          {/* Main Button */}
-          <div className="hidden relative flex justify-center items-center w-[100px] h-[30px] bg-orange-500 rounded-sm">
-            <span className=" hidden text-white font-bold text-sm">NEWS</span>
-          </div>
-        </div>
       </div>
     </div>
   );
 };
 
 export default Banner;
+
