@@ -13,7 +13,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Blocklens",
+  title:
+   { 
+    default: "Blocklens", 
+    template: "%s - Blocklens",
+
+    },
   description: "Explore Media, Magazine, Art, Store, Articles, Print, Books, Conferences, and more.",
   keywords: "Media, Magazine, Art, Store, Articles, Print, Book, Conference, Corporation, UTXO",
   openGraph: {
@@ -22,6 +27,9 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://blocklens-flame.vercel.app",
   },
+  twitter: {
+    // card
+  }
 };
 
 export default function RootLayout({

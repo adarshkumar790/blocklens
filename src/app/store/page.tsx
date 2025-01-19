@@ -1,3 +1,8 @@
+import { Metadata } from 'next';
+export const metadata: Metadata = {
+  title: "Store"
+}
+
 import AnyQuestion from "@/components/store/AnyQuestion";
 import Container from "@/components/store/Container";
 import Footer from "@/components/store/Footer";
@@ -7,7 +12,7 @@ import Search from "@/components/store/Search";
 import Image from "next/image";
 import React from "react";
 
-const HomePage: React.FC = () => {
+const Store: React.FC = () => {
   return (
     <div className="bg-white text-black font-sans min-h-screen">
       {/* Header */}
@@ -89,4 +94,4 @@ const HomePage: React.FC = () => {
   );
 };
 
-export default HomePage;
+export default Store;

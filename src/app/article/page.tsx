@@ -1,3 +1,8 @@
+import { Metadata } from 'next';
+export const metadata: Metadata = {
+  title: "About"
+}
+
 import Advertise from '@/components/Advertise';
 import Articles from '@/components/Article';
 import Articlecontainer from '@/components/article/Articlecontainer';
@@ -15,7 +20,7 @@ import React from 'react';
 import { BsInstagram, BsLinkedin, BsTwitter, BsYoutube } from 'react-icons/bs';
 import { FaFacebook } from 'react-icons/fa';
 
-const Page = () => {
+const Article = () => {
   return (
     <header className="bg-white text-gray-800">
       <Navbar/>
@@ -108,4 +113,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default Article;
