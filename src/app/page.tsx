@@ -24,7 +24,7 @@ const Header = () => {
   return (
     <header className="bg-white text-gray-800">
       <Navbar />
-      {/* Desktop Layout */}
+    
       <div className="hidden md:block bg-[#53575D] text-white relative h-56">
         <div className="flex items-center justify-between px-4 h-full">
           <div className="flex flex-col space-y-4">
@@ -55,10 +55,8 @@ const Header = () => {
           </div>
         </div>
       </div>
-
-      {/* Mobile Layout */}
       <div className="block md:hidden bg-[#53575D] text-white p-4">
-        {/* Social Media Section */}
+      
         <div className="flex space-x-4 justify-center mb-6">
           {socialLinks.map(({ href, src, alt, size }) => (
             <a key={alt} href={href} className="text-white">
@@ -68,18 +66,14 @@ const Header = () => {
         </div>
 
         <div className="flex flex-col items-center space-y-8">
-          {/* Blocklens Logo */}
+      
           <img src="/block.png" alt="Blocklens Logo" className="h-64 w-72 -mt-12" />
-
-          {/* Section 1 */}
           <div className="flex flex-col items-center space-y-2">
             <img src="/pro.png" alt="Pro Icon" className="h-24 w-auto -mt-20" />
             <span className="text-center font-inter text-[16px] font-semibold">
               VIEW 150+ <br /> BITCOIN CHARTS & <br /> INDICATORS
             </span>
           </div>
-
-          {/* Section 2 */}
           <div className="flex flex-col items-center space-y-2">
             <img src="/bit.png" alt="Bitcoin Icon" className="h-16 w-auto bg-orange-500 p-2 rounded-full" />
             <span className="text-center font-inter text-[19px] font-semibold">

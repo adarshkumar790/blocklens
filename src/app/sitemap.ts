@@ -20,7 +20,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly',
       priority: 0.3,
     },
-    // Dynamic routes example (you would typically fetch these from a database)
     {
       url: 'https://blocklens-flame.vercel.app/print',
       lastModified: new Date('2025-01-09'),
@@ -87,7 +86,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
         changeFrequency: 'weekly',
         priority: 0.14,
        },
-
-
   ]
 }
