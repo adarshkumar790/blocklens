@@ -12,7 +12,7 @@ const Search = () => {
         <div className="text-white max-w-xl mt-60 md:mt-40">
           {/* Heading */}
           <h1 className="md:text-4xl text-xl font-bold -mt-20 md:mr-40 ml-40">Want 10% off?</h1>
-          <p className="md:text-2xl md:font-bold md:mt-16 mt-1 ml-40 text-sm">
+          <p className="md:text-2xl md:font-bold md:mt-8 mt-1  ml-40 text-sm">
             Plus be the first <br /> to hear about exclusive <br /> drops and
             offers.
           </p>

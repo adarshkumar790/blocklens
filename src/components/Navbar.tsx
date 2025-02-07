@@ -15,6 +15,7 @@ const Navbar: React.FC = () => {
     { href: "/conference", label: "Conference" },
     { href: "/corporation", label: "Corporation" },
     { href: "/utxo", label: "UTXO" },
+    { href: "/contact", label: "Contact"}
   ];
 
   const toggleMenu = () => setIsOpen((prev) => !prev); // Extracted toggle function to avoid inline logic
