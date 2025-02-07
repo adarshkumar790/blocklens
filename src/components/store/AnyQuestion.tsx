@@ -16,7 +16,7 @@ const AnyQuestion = () => {
           <input
             type="text"
             placeholder="Enter your question"
-            className="w-[300px] sm:w-[400px] h-12 px-4 rounded-l-3xl border border-gray-300 focus:outline-none text-gray-700 placeholder-gray-400"
+            className="w-[200px] sm:w-[400px] h-12 px-4 rounded-l-3xl border border-gray-300 focus:outline-none text-gray-700 placeholder-gray-400"
           />
           <button className="bg-[#F8BD48] text-white font-semibold px-6 h-12 rounded-r-3xl">
             Email Us

@@ -10,7 +10,7 @@ const Reader = () => {
       {/* Section Title */}
       <div className="flex items-center justify-center mb-4">
         <div className="w-16 md:w-24 border-t border-2 border-gray-300 mx-2 md:mx-4"></div>
-        <h2 className="text-xl md:text-2xl font-bold text-[#000000]">FROM THE READERS</h2>
+        <h2 className=" md:text-2xl font-bold text-[#000000]">FROM THE READERS</h2>
         <div className="w-16 md:w-24 border-t border-2 border-gray-300 mx-2 md:mx-4"></div>
       </div>
 
@@ -58,10 +58,11 @@ const Reader = () => {
 };
 
 const PaymentOption : React.FC<PaymentOptionProps> = ({ imageSrc, title, description }) => (
-  <div className="flex items-center space-x-4">
+  <div className="flex flex-col items-center space-x-2">
     <img src={imageSrc} alt={title} className="w-8 h-8 md:w-10 md:h-10" />
-    <div className="flex flex-col items-start">
-      <p className="text-sm md:text-base text-[#000000] font-bold">{title}</p>
+    <p className="text-sm md:text-base text-[#000000] font-bold">{title}</p>
+    <div className="flex flex-col items-center">
+     
       <p className="text-xs md:text-sm text-gray-500">{description}</p>
     </div>
   </div>
