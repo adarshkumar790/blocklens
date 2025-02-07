@@ -38,7 +38,7 @@ const Header = () => {
             <div className="p-2 rounded-full">
               <img src="/pro.png" alt="Pro Icon" className="h-[103px] w-[169px]" />
             </div>
-            <span className="font-inter text-[18px] font-semibold leading-[21.78px] text-left underline-offset-[from-font] decoration-skip-ink-none">
+            <span className="font-inter text-[20px] font-semibold leading-[21.78px] text-left underline-offset-[from-font] decoration-skip-ink-none">
               VIEW 150+ <br /> BITCOIN CHARTS & <br /> INDICATORS
             </span>
           </div>
