@@ -31,47 +31,48 @@ const Store: React.FC = () => {
 
       {/* Main Content */}
       <main className="flex flex-col sm:flex-row relative">
-        {/* Gray Box Section */}
-        <div className="bg-[#53575D] w-full sm:w-3/4 p-4 sm:p-2 min-h-[calc(100vh-96px)] text-center sm:text-left">
-          <div className="mt-10 sm:mt-40 sm:mr-96">
-            <h2 className="font-times text-xl sm:text-[32px] text-[#FFFFFF] font-normal leading-tight sm:leading-[36.8px] tracking-[0.1em] sm:ml-32">
-              Official Pre-Sale
-            </h2>
-            <h1 className="font-poor-richard text-2xl sm:text-[52px] text-[#FFFFFF] font-normal leading-tight sm:leading-[72.06px] sm:ml-16">
-              The Satoshi Papers
-            </h1>
-            <p className="font-times text-lg sm:text-[32px] text-[#FFFFFF] font-normal leading-tight sm:leading-[41.4px] tracking-[0.1em] sm:ml-24">
-              Reflection on political economy after Bitcoin
-            </p>
-          </div>
+  {/* Gray Box Section */}
+  <div className="bg-[#53575D] w-full sm:w-3/4 p-4 sm:p-2 min-h-[calc(50vh-96px)] sm:min-h-[calc(100vh-96px)] text-center sm:text-left">
+    <div className="mt-6 sm:mt-40 sm:mr-96"> {/* Reduced margin for mobile */}
+      <h2 className="font-times text-lg sm:text-[32px] text-[#FFFFFF] font-normal leading-tight sm:leading-[36.8px] tracking-[0.1em] sm:ml-32">
+        Official Pre-Sale
+      </h2>
+      <h1 className="font-poor-richard text-xl sm:text-[52px] text-[#FFFFFF] font-normal leading-tight sm:leading-[72.06px] sm:ml-16">
+        The Satoshi Papers
+      </h1>
+      <p className="font-times text-sm sm:text-[32px] text-[#FFFFFF] font-normal leading-tight sm:leading-[41.4px] tracking-[0.1em] sm:ml-24">
+        Reflection on political economy after Bitcoin
+      </p>
+    </div>
 
-          {/* Buttons */}
-          <div className="mt-6 sm:mt-12 flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4 justify-center sm:justify-end pr-0 sm:pr-14 pt-2">
-            <button className="bg-[#F8BD48] text-xs text-[#FFFFFF] px-4 py-2 font-semibold z-10 border border-white">
-              LIBRARY EDITION
-            </button>
-            <button className="bg-[#F8BD48] text-xs text-[#FFFFFF] px-4 py-2 font-bold border border-white z-10">
-              PAPERBACK
-            </button>
-          </div>
-        </div>
+    {/* Buttons */}
+    <div className="mt-4 sm:mt-12 flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4 justify-center sm:justify-end pr-0 sm:pr-14 pt-2">
+      <button className="bg-[#F8BD48] text-xs text-[#FFFFFF] px-3 py-2 font-semibold z-10 border border-white">
+        LIBRARY EDITION
+      </button>
+      <button className="bg-[#F8BD48] text-xs text-[#FFFFFF] px-3 py-2 font-bold border border-white z-10">
+        PAPERBACK
+      </button>
+    </div>
+  </div>
 
-        {/* Right Section */}
-        <div className="hidden sm:block w-1/4"></div>
-        <div
-          className="absolute inset-0 flex justify-center sm:justify-end"
-          style={{ pointerEvents: "none" }}
-        >
-          <div
-            className="hidden sm:block absolute top-20 border border-[#F8BD48] border-t-2 border-b-2 right-16 h-full bg-cover bg-center"
-            style={{
-              width: "50%",
-              height: "70%",
-              backgroundImage: "url('/book.png')",
-            }}
-          />
-        </div>
-      </main>
+  {/* Right Section */}
+  <div className="hidden sm:block w-1/4"></div>
+  <div
+    className="absolute inset-0 flex justify-center sm:justify-end"
+    style={{ pointerEvents: "none" }}
+  >
+    <div
+      className="hidden sm:block absolute top-20 border border-[#F8BD48] border-t-2 border-b-2 right-16 h-full bg-cover bg-center"
+      style={{
+        width: "50%",
+        height: "70%",
+        backgroundImage: "url('/book.png')",
+      }}
+    />
+  </div>
+</main>
+
 
       <Image
         src="/banner.png"
