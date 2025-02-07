@@ -58,6 +58,7 @@ const Navbar: React.FC = () => {
         </button>
       </div>
       <ul className="hidden md:flex space-x-4 text-sm font-semibold text-[#FFFFFF]">
+      <li className="hover:underline cursor-pointer">HOME</li>
         <li className="hover:underline cursor-pointer">MAGAZINES</li>
         <li className="hover:underline cursor-pointer">BOOKS</li>
 
