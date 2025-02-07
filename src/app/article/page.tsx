@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 export const metadata: Metadata = {
-  title: "About"
+  title: "Article"
 }
 
 import Advertise from '@/components/Advertise';

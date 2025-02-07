@@ -17,7 +17,6 @@ export const metadata: Metadata = {
    { 
     default: "Blocklens", 
     template: "%s - Blocklens",
-
     },
   description: "Explore Media, Magazine, Art, Store, Articles, Print, Books, Conferences, and more.",
   keywords: "Media, Magazine, Art, Store, Articles, Print, Book, Conference, Corporation, UTXO",
