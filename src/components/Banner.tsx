@@ -18,7 +18,7 @@ const Banner: React.FC = () => {
         <div className="flex flex-col items-center flex-grow w-full md:w-[800px]">
           <div className="bg-white shadow-md rounded-xl mt-12 overflow-hidden h-80 md:w-[840px] md:-ml-20 md:h-[320px]">
             <img
-              src="/banner1.png" // Replace with actual image
+              src="/bnb.jpg" // Replace with actual image
               alt="Bitcoin Analysis"
               className="w-full h-full object-cover"
             />
@@ -28,7 +28,7 @@ const Banner: React.FC = () => {
             {/* Content or placeholder */}
           </div>
           <div className="w-full h-[30px] mt-4 md:text-2xl text-xs text-[#000000] font-bold md:text-center text-right">
-            WATCH: Michael Saylor’s Bitcoin $100K Party
+          Binance Coin (BNB) Price Prediction 2025, 2026-2030
           </div>
           <div className="relative inline-block">
             {/* Shadow Effect */}
