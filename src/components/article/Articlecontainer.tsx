@@ -4,36 +4,36 @@ import Image from 'next/image';
 
 const allArticles = [
   {
-    title: "Michael Saylor's Trump Meeting Is Turbo Bullish for Bitcoin",
+    title: "Onchain real-world assets gain traction amid Bitcoin market uncertainty",
     description:
-      "Michael Saylor, Executive Chairman of MicroStrategy and a prominent Bitcoin advocate, recently met with members of former President Donald Trump's team at Mar-a-Lago.",
-    date: 'Jan 1, 2025',
-    author: 'HELMUNG',
-    imageSrc: '/article1.png',
+      "Onchain RWAs are gaining traction as Bitcoin’s price struggles, with market commentators predicting TVL could hit $50 billion in 2025 as demand grows.",
+    date: '27 minutes ago',
+    author: 'Zoltan Vardai',
+    imageSrc: '/articlenews1.avif',
   },
   {
-    title: "Michael Saylor's Trump Meeting Is Turbo Bullish for Bitcoin",
+    title: "Here’s what happened in crypto today",
     description:
-      "Michael Saylor, Executive Chairman of MicroStrategy and a prominent Bitcoin advocate, recently met with members of former President Donald Trump's team at Mar-a-Lago.",
-    date: 'Jan 1, 2025',
-    author: 'HELMUNG',
-    imageSrc: '/article2.png',
+      "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, NFTs, Web3 and crypto regulation.",
+    date: '11 hours ago',
+    author: 'Cointelegraph',
+    imageSrc: '/articlenews2.avif',
   },
   {
-    title: "Michael Saylor's Trump Meeting Is Turbo Bullish for Bitcoin",
+    title: "Tornado Cash developer Alexey Pertsev leaves prison custody",
     description:
-      "Michael Saylor, Executive Chairman of MicroStrategy and a prominent Bitcoin advocate, recently met with members of former President Donald Trump's team at Mar-a-Lago.",
-    date: 'Jan 1, 2025',
-    author: 'HELMUNG',
-    imageSrc: '/article2.png',
+      "The crypto community and privacy advocates worldwide have been closely following Alexey Pertsev’s legal battle and the Tornado Cash case.",
+    date: '11 hours ago',
+    author: 'Vince Quill',
+    imageSrc: '/articlenews3.avif',
   },
   {
-    title: "Michael Saylor's Trump Meeting Is Turbo Bullish for Bitcoin",
+    title: "New agent launches on Virtuals plummet amid AI token drawdown",
     description:
-      "Michael Saylor, Executive Chairman of MicroStrategy and a prominent Bitcoin advocate, recently met with members of former President Donald Trump's team at Mar-a-Lago.",
-    date: 'Jan 1, 2025',
-    author: 'HELMUNG',
-    imageSrc: '/article2.png',
+      "Originally launched on Base, the AI engine hosts popular agents but has experienced a sharp decline in new debuts.",
+    date: '11 hours ago',
+    author: 'Alex O’Donnell',
+    imageSrc: '/articlenews4.avif',
   },
 ];
 

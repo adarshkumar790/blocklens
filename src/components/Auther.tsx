@@ -2,10 +2,10 @@
 import React from "react";
 
 const authors = [
-  { name: "Aaron van Wirdum", image: "/auth1.png" },
-  { name: "Aaron van Wirdum", image: "/auth2.png" },
-  { name: "Aaron van Wirdum", image: "/auth3.png" },
-  { name: "Aaron van Wirdum", image: "/auth4.png" },
+  { name: "Don Tapscott", image: "/don.jpeg" },
+  { name: "Andreas M. Antonopoulos", image: "/andreas.jpg" },
+  { name: "Vitalik Buterin", image: "/vitalik.jpeg" },
+  { name: "Nathaniel Popper", image: "/nar.jpeg" },
   { name: "Aaron van Wirdum", image: "/auth5.png" },
 ];
 

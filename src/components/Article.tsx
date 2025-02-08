@@ -2,21 +2,21 @@ import React from "react";
 
 const articles = [
   {
-    title: "$1 Million In Seed Capital Awarded To DeFi Hedge Fund Boreal, Bitcoin Alpha Competition Winner",
-    description: "Samara Asset Management and Bitcoin Magazine Pro selected Boreal as the winner of the second-ever Bitcoin Alpha competition",
-    image: "/article.png",
+    title: "Breaking: $TRUMP Token dropped -69% from it's All Time High.",
+    description: "BlackRock, the $12 trillion asset manager, is looking to spread the Bitcoin word across Europe.After clinching the American crypto market with more than $56 billion in investment into its IBIT offering, BlackRock is now looking to launch a similar product in Europe, according to a Bloomberg report. BlackRock declined to comment.",
+    image: "/latestnews1.jpg",
     tag: "TAGS",
   },
   {
-    title: "Owning 1 Bitcoin Is Better Than Being a Millionaire",
-    description: "Think being a millionaire is exclusive? Let me explain why owning just 1 bitcoin might be the real wealth symbol of the future.",
-    image: "/block2.png",
+    title: "Crypto tax in india",
+    description: " JUST IN: #Indian #crypto holders face up to 70% tax penalty on undisclosed gains under new regulations starting February 2025.",
+    image: "/latestnews3.jpg",
     tag: "TAGS",
   },
   {
-    title: "The Women In Bitcoin That CoinTelegraph Forgot",
+    title: "Community on #X is exposing #Binance for today long liquidation random dump.",
     description: "Women based in Europe and the U.S. are doing excellent work in the Bitcoin space, as CoinTelegraph pointed out, but so are women from Africa, Latin America, Southeast Asia and The Middle East.",
-    image: "/block3.png",
+    image: "/latestnews2.jpg",
     tag: "OPINION",
   },
 ];
@@ -51,8 +51,8 @@ const Articles: React.FC = () => {
                 {article.description}
               </p>
               <div className="flex items-center justify-between text-sm text-[#53575D] mt-4">
-                <span>by HEKMANG</span>
-                <time dateTime="2025-01-01">Jan 1, 2025</time>
+                {/* <span>by HEKMANG</span> */}
+                {/* <time dateTime="2025-01-01">Jan 1, 2025</time> */}
                 <button
                   className="text-[#FFFFFF] text-xs font-medium px-2 py-1 bg-[#1E293B] rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
                   aria-label={`Read more about ${article.tag}`}

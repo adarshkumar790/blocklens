@@ -4,40 +4,52 @@ import React from "react";
 
 const articles = [
   {
-    title: "$1 Million In Seed Capital Awarded To DeFi Hedge Fund Boreal, Bitcoin Alpha Competition Winner",
-    description: "Samara Asset Management and Bitcoin Magazine Pro selected Boreal as the winner of the second-ever Bitcoin Alpha competition",
-    image: "/article.png",
+    title: "BlackRock is rolling out a Bitcoin ETF in Europe. Here’s why it’s a hard sell",
+    description: "BlackRock, the $12 trillion asset manager, is looking to spread the Bitcoin word across Europe.After clinching the American crypto market with more than $56 billion in investment into its IBIT offering, BlackRock is now looking to launch a similar product in Europe, according to a Bloomberg report. BlackRock declined to comment.",
+    image: "/blocknews8.avif",
     tag: "TAGS",
+    name: "Liam Kelly",
+    date: "7 Feb 2025",
   },
   {
-    title: "Owning 1 Bitcoin Is Better Than Being a Millionaire",
-    description: "Think being a millionaire is exclusive? Let me explain why owning just 1 bitcoin might be the real wealth symbol of the future.",
-    image: "/block2.png",
+    title: "Why new stablecoin bill is a boost for tokenisation in potential $16tn market",
+    description: "The newest stablecoin bill won’t just establish long-desired rules for cryptocurrencies pegged to the dollar. It is also spurring excitement from tokenisation entrepreneurs that their market will benefit as well.On Tuesday, Senator Bill Hagerty, a Republican from Tennessee, introduced legislation that is designed to establish rules for stablecoin issuers in the US.",
+    image: "/blocknews9.avif",
     tag: "TAGS",
+    name: "Pedro Solimano",
+    date: "8 Feb 2025",
   },
   {
-    title: "The Women In Bitcoin That CoinTelegraph Forgot",
-    description: "Women based in Europe and the U.S. are doing excellent work in the Bitcoin space, as CoinTelegraph pointed out, but so are women from Africa, Latin America, Southeast Asia and The Middle East.",
-    image: "/block3.png",
+    title: "Memecoin frenzy fizzles with $46bn plunge since Trump ― but analysts see a revival",
+    description: "The market euphoria surrounding memecoins has died down.Trading activity for meme tokens has gone down by a fifth in the last month.Market observers say the market is recalibrating.",
+    image: "/blocknews11.avif",
     tag: "OPINION",
+    name: "Osato Avan-Nomayo",
+    date: "7 Feb 2025",
   },
   {
-    title: "BITCOIN IS FIAT",
-    description: "Bitcoin is not a digital commodity, it is a decentralized digital fiat currency.",
-    image: "/block4.png",
+    title: "‘Hawk Tuah girl’ Haliey Welch — and her lawyer — explain memecoin dumpster fire",
+    description: "Haliey Welch’s burgeoning podcast career was abruptly halted after a failed memecoin launch.In her first episode back, Welch and her lawyer attempt to explain what happened to an invited panel of memecoin experts.The leak of the episode itself is generating its own controversy.",
+    image: "/blocknews10.avif",
     tag: "TAGS",
+    name: "Andrew Flanagan",
+    date: "7 Feb 2025",
   },
   {
-    title: "BITCOIN IS FIAT",
-    description: "Bitcoin is not a digital commodity, it is a decentralized digital fiat currency.",
-    image: "/block5.png",
+    title: "Trump’s crypto czar and Congress begin big push for ‘regulatory clarity’",
+    description: "The White House and Congress laid out a bevy of ambitious changes for the digital assets industry.Stablecoins lead a flurry of bill writing.Some market experts highlighted a surprising ally in the push for new laws.",
+    image: "/blocknews12.avif",
     tag: "TAGS",
+    name: "Donal Trump",
+    date: "7 Feb 2025",
   },
   {
-    title: "BITCOIN IS FIAT",
-    description: "Bitcoin is not a digital commodity, it is a decentralized digital fiat currency.",
-    image: "/block6.png",
+    title: "Ondo to launch ‘hybrid’ blockchain for Wall Street",
+    description: "Ondo Finance will launch its own layer 1 blockchain.Ondo Chain, targeted at traditional financial institutions, will feature an invite-only list of validators.“You as an institution can actually run a node without ever having to touch crypto,” an Ondo executive said.",
+    image: "/blocknews13.avif",
     tag: "OPINION",
+    name: "Aleks Gilbert",
+    date: "6 Feb 2025",
   },
 ];
 
@@ -58,17 +70,17 @@ const Container1: React.FC = () => {
             />
             <div className="p-2">
               <h2 className="w-[300px] h-[96px]  font-bold left-[124px] gap-0"> {article.title}</h2>
-              <p className="w-[300px] h-[150px]  left-[124px] gap-0">{article.description}</p>
+              <p className="w-[310px] h-[280px]  left-[124px] gap-0">{article.description}</p>
               <div className="flex items-center justify-between text-sm text-[#53575D] mt-4">
               <div style={{ display: 'flex', alignItems: 'center' }}>
               <Image src="/profile.png" width={15} height={15} alt="calendar" />
-              <span style={{ marginLeft: '5px' }}>Halanko</span>
+              <span style={{ marginLeft: '5px' }}>{article.name}</span>
               </div>
 
                 
                 <div style={{ display: 'flex', alignItems: 'center' }}>
                <Image src="/cal.png" width={15} height={15} alt="calendar" />
-               <span style={{ marginLeft: '5px' }}>Jan 1, 2025</span>
+               <span style={{ marginLeft: '5px' }}>{article.date}</span>
                </div>
 
                 <button className="text-[#FFFFFF] text-xs font-medium px-2 py-2 bg-[#1E293B] rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400">

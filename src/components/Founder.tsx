@@ -21,9 +21,8 @@ const Founders: React.FC = () => {
 
             {/* Text Box */}
             <div className="bg-[#53575DA6] md:w-[200px] w-[360px] h-[80px]  p-2 md:p-6 md:h-[340px] md:mb-7 mb-0 flex items-start justify-center">
-              <p className="text-[#FFFFFF] md:text-xl text-sm leading-tight md:text-center text-start md:text-left">
-                Neobank  Yopaki  Aims To <br /> Make Every Mexican <br />
-                A Bitcoiner
+              <p className="text-[#FFFFFF] md:text-2xl text-sm leading-tight md:text-center text-start md:text-left">
+              BlackRock is rolling out a Bitcoin ETF in Europe. Here’s why it’s a hard sell. 
               </p>
             </div>
           </div>
@@ -31,7 +30,7 @@ const Founders: React.FC = () => {
           {/* Right Section */}
           <div className="w-full md:w-[700px] relative">
             <img
-              src="/founder2.jpeg" // Replace with actual image path
+              src="/blocknews6.jpg" // Replace with actual image path
               alt="Founder"
               className=" w-[600px] md:w-full  h-[200px] md:h-[400px] object-cover rounded-lg"
             />
@@ -39,9 +38,9 @@ const Founders: React.FC = () => {
             <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/90 via-black/60 to-transparent p-4 text-white">
               <div className="flex items-center justify-between text-sm">
                 <div className="flex items-center gap-2">
-                  <span className="font-semibold">By Frank Korva</span>
+                  <span className="font-semibold">By Liam Kelly</span>
                 </div>
-                <span>Dec 31, 2024</span>
+                <span>Feb 07, 2025</span>
               </div>
             </div>
           </div>

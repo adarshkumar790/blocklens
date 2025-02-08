@@ -29,10 +29,11 @@ const Advertise: React.FC = () => {
           {/* Text Content */}
           <div className="flex flex-col items-center mb-4">
             <p
-              className="text-[#FFFFFF] text-base leading-relaxed text-left md:text-left md:max-w-3xl ml-0 md:ml-8 mr-0 md:mr-8"
+              className="text-[#FFFFFF] text-base leading-relaxed text-left md:text-left md:max-w-3xl ml-0 md:ml-8 mr-0 md:mr-12"
               aria-label="Advertisement Description"
             >
-              Amplify your brand with the world’s first and most trusted Bitcoin media company. Every year, millions of people with diverse interests depend on Bitcoin Magazine for the most reliable, accurate, timely, and relevant content. We are trusted by the Bitcoin community to inform and enlighten with quality stories that meet our stringent editorial and journalistic standards.
+               BREAKING: #Trump's 🇺🇸 World Liberty Finance bought 86,000 $ETH💰 in past 7 hours.
+               $WLFI total holdings now $422 million with $ETH allocation at 65%.
             </p>
           </div>
 

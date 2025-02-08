@@ -3,45 +3,45 @@ import React from "react";
 // Centralized article data for easier updates and maintainability.
 const articles = [
   {
-    title: "BITCOIN IS FIAT",
+    title: "FTX",
     description:
-      "Bitcoin is not a digital commodity, it is a decentralized digital fiat currency.",
-    image: "/block1.png",
+      "Bankrupt #crypto exchange #FTX to begin repaying customers on February 18.",
+    image: "/blocknews1.jpg",
     tag: "TAGS",
   },
   {
-    title: "BITCOIN IS FIAT",
+    title: "Strategy",
     description:
-      "Bitcoin is not a digital commodity, it is a decentralized digital fiat currency.",
-    image: "/block2.png",
+      " Michael #Saylor's #MicroStrategy changes its name to 'Strategy'.",
+    image: "/blocknews2.jpg",
     tag: "TAGS",
   },
   {
-    title: "BITCOIN IS FIAT",
+    title: "JUPITER",
     description:
-      "Bitcoin is not a digital commodity, it is a decentralized digital fiat currency.",
-    image: "/block3.png",
+      "#Jupiter #Exchange X/twitter account hacked.",
+    image: "/blocknews3.jpg",
     tag: "OPINION",
   },
   {
-    title: "BITCOIN IS FIAT",
+    title: "SOLANA",
     description:
-      "Bitcoin is not a digital commodity, it is a decentralized digital fiat currency.",
-    image: "/block4.png",
+      "BULLISH: #VanEck predict that #Solana will reach $520 by the end of 2025.",
+    image: "/blocknews4.jpg",
     tag: "TAGS",
   },
   {
-    title: "BITCOIN IS FIAT",
+    title: "BLACKROCK",
     description:
-      "Bitcoin is not a digital commodity, it is a decentralized digital fiat currency.",
-    image: "/block5.png",
+      "#BlackRock, the world’s largest asset manager, just purchased 3,839.25 #ETH 💰worth $10.36 million. ",
+    image: "/blocknews6.jpg",
     tag: "TAGS",
   },
   {
-    title: "BITCOIN IS FIAT",
+    title: "BITCOIN",
     description:
-      "Bitcoin is not a digital commodity, it is a decentralized digital fiat currency.",
-    image: "/block6.png",
+      "JUST IN : #ChatGPT Predicts #Bitcoin💰 Cycle Top Price.",
+    image: "/blocknews5.jpg",
     tag: "OPINION",
   },
 ];
@@ -55,8 +55,7 @@ const Container: React.FC = () => {
           <div
             key={index} // Using index as key since data is static and order is fixed.
             className="bg-[#F8F8F8] shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
-          >
-            {/* Optimized image rendering with object-cover for consistent layout */}
+          >            
             <img
               src={article.image}
               alt={article.title}

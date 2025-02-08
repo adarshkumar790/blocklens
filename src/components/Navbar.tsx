@@ -4,8 +4,8 @@ import React, { useState } from "react";
 import { usePathname } from "next/navigation";
 
 const Navbar: React.FC = () => {
-  const [isOpen, setIsOpen] = useState(false); // Removed unnecessary state for active link
-  const pathname = usePathname(); // Use pathname to determine active link
+  const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   const navLinks = [
     { href: "/", label: "Home" },
@@ -18,9 +18,9 @@ const Navbar: React.FC = () => {
     { href: "/contact", label: "Contact"}
   ];
 
-  const toggleMenu = () => setIsOpen((prev) => !prev); // Extracted toggle function to avoid inline logic
+  const toggleMenu = () => setIsOpen((prev) => !prev); 
 
-  const linkClass = (href: string) => // Created reusable function to handle link styles
+  const linkClass = (href: string) => 
     pathname === href
       ? "md:text-yellow-500 text-yellow-500 md:text-black text-white"
       : "md:text-black text-white md:hover:text-yellow-500 hover:text-yellow";
@@ -30,7 +30,7 @@ const Navbar: React.FC = () => {
       <div className="flex justify-between items-center p-4 md:justify-center">
         <button
           className="md:hidden text-black focus:outline-none"
-          onClick={toggleMenu} // Replaced inline toggle logic with the extracted function
+          onClick={toggleMenu} 
           aria-label="Toggle menu"
         >
           {isOpen ? (
