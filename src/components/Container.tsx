@@ -65,8 +65,8 @@ const Container: React.FC = () => {
               <h2 className="font-bold text-xl leading-6">{article.title}</h2>
               <p className="text-sm text-[#53575D] mt-2">{article.description}</p>
               <div className="flex items-center justify-between text-xs text-[#53575D] mt-4">
-                <span>by HEKMANG</span>
-                <span>Jan 1, 2025</span>
+                {/* <span>by HEKMANG</span>
+                <span>Jan 1, 2025</span> */}
               </div>
               <div className="flex justify-start items-center mt-4 mb-1">
                 <button
