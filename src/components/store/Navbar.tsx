@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
 import { FaChevronDown, FaBars, FaTimes } from "react-icons/fa";
 
@@ -58,7 +59,7 @@ const Navbar: React.FC = () => {
         </button>
       </div>
       <ul className="hidden md:flex space-x-4 text-sm font-semibold text-[#FFFFFF]">
-      <li className="hover:underline cursor-pointer">HOME</li>
+      <li className="hover:underline cursor-pointer"><Link href="/">HOME</Link></li>
         <li className="hover:underline cursor-pointer">MAGAZINES</li>
         <li className="hover:underline cursor-pointer">BOOKS</li>
 
